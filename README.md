@@ -6,6 +6,6 @@ Minimal translucent Waybar configuration for Niri.
 
 ![Slaybar](screenshots.png)
 
-##Workspaces
+## Workspaces
 
 The workspace number are in *japanese* , can be changed within config.jsonc
