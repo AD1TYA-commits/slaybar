@@ -13,3 +13,326 @@ window#waybar {
     color: #dce6f5;
 }
 
+/* Dark, translucent capsules */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+    border: 1px solid rgba(100, 130, 180, 0.10);
+    border-radius: 18px;
+    padding: 0 10px;
+    margin: 7px 3px;
+}
+
+/* Workspace: no capsule border or background */
+.modules-left {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 3px;
+}
+
+#workspaces {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces button {
+    background: transparent;
+    border: none;
+    color: #c5d8f5;
+    border-radius: 14px;
+    padding: 4px 17px;
+    margin: 0;
+    box-shadow: none;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background: transparent;
+    color: #c5d8f5;
+    border: none;
+    border-radius: 14px;
+    box-shadow: none;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #a9c7f5;
+}
+
+/* Text-only clock */
+#clock {
+    background: transparent;
+    border: none;
+    color: #dce6f5;
+    padding: 0 14px;
+}
+
+/* Right-side text modules */
+#network,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#battery,
+#tray {
+    background: transparent;
+    border: none;
+    padding: 0 6px;
+    margin: 0 2px;
+}
+
+#network,
+#bluetooth { color: #a9c7ee; }
+#pulseaudio { color: #c5b8ef; }
+#backlight { color: #d6c9a9; }
+#cpu { color: #a9d3b0; }
+#memory { color: #c9b8ee; }
+#battery { color: #a9d3b0; }
+#battery.warning { color: #e8c58b; }
+#battery.critical { color: #ef8888; }
+
+tooltip {
+    background: rgba(8, 15, 30, 0.96);
+    color: #dce6f5;
+    border: 1px solid rgba(100, 130, 180, 0.12);
+    border-radius: 10px;
+    padding: 6px;
+}
+
+/* Right-side tools: transparent, no outer capsule border */
+.modules-right {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0 4px;
+}
+
+/* Remove individual tool borders */
+#network,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#battery,
+#tray {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0 9px;
+    margin: 0;
+}
+
+/* Thin translucent glass dividers */
+#bluetooth,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#battery,
+#tray {
+    border-left: 1px solid rgba(190, 210, 245, 0.28);
+}
+
+/* Local SVG icons with minimal glass styling */
+.modules-right {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0 4px;
+}
+
+#network, #bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    min-width: 18px;
+    min-height: 22px;
+    padding: 0 9px;
+    margin: 0;
+    color: transparent;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    border: none;
+    box-shadow: none;
+}
+
+#bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    border-left: 1px solid rgba(190, 210, 245, 0.22);
+}
+
+#network {
+    background-image: url("/home/aditya/.config/waybar/icons/wifi.svg");
+}
+#bluetooth {
+    background-image: url("/home/aditya/.config/waybar/icons/bluetooth.svg");
+}
+#pulseaudio {
+    background-image: url("/home/aditya/.config/waybar/icons/volume.svg");
+}
+#backlight {
+    background-image: url("/home/aditya/.config/waybar/icons/brightness.svg");
+}
+#cpu {
+    background-image: url("/home/aditya/.config/waybar/icons/cpu.svg");
+}
+#memory {
+    background-image: url("/home/aditya/.config/waybar/icons/memory.svg");
+}
+#battery {
+    background-image: url("/home/aditya/.config/waybar/icons/battery.svg");
+}
+
+/* Pale glass icon treatment */
+#network, #bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    opacity: 1;
+    background-size: 16px 16px;
+}
+
+
+/* SVG icon layer */
+#network, #bluetooth, #pulseaudio, #backlight, #cpu, #memory, #battery {
+    min-width: 18px;
+    min-height: 22px;
+    padding: 0 9px;
+    margin: 0;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    border: none;
+    box-shadow: none;
+}
+#bluetooth, #pulseaudio, #backlight, #cpu, #memory, #battery {
+    border-left: 1px solid rgba(190, 210, 245, 0.22);
+}
+#network { background-image: url("/home/aditya/.config/waybar/icons/wifi.svg"); }
+#bluetooth { background-image: url("/home/aditya/.config/waybar/icons/bluetooth.svg"); }
+#pulseaudio { background-image: url("/home/aditya/.config/waybar/icons/volume.svg"); }
+#backlight { background-image: url("/home/aditya/.config/waybar/icons/brightness.svg"); }
+#cpu { background-image: url("/home/aditya/.config/waybar/icons/cpu.svg"); }
+#memory { background-image: url("/home/aditya/.config/waybar/icons/memory.svg"); }
+#battery { background-image: url("/home/aditya/.config/waybar/icons/battery.svg"); }
+
+
+/* SVG icons with readable values */
+#network, #bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    color: #dce8ff;
+    font-size: 11px;
+    min-width: 0;
+    padding: 0 7px 0 25px;
+    background-repeat: no-repeat;
+    background-position: 6px center;
+    background-size: 15px 15px;
+}
+
+/* Shorter, thinner glass separators */
+#bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    border-left: none;
+    background-image: none;
+    box-shadow: inset 0 7px 0 -6px rgba(190, 210, 245, 0.32);
+}
+
+/* Restore each local SVG */
+#network { background-image: url("/home/aditya/.config/waybar/icons/wifi.svg"); }
+#bluetooth { background-image: url("/home/aditya/.config/waybar/icons/bluetooth.svg"); }
+#pulseaudio { background-image: url("/home/aditya/.config/waybar/icons/volume.svg"); }
+#backlight { background-image: url("/home/aditya/.config/waybar/icons/brightness.svg"); }
+#cpu { background-image: url("/home/aditya/.config/waybar/icons/cpu.svg"); }
+#memory { background-image: url("/home/aditya/.config/waybar/icons/memory.svg"); }
+#battery { background-image: url("/home/aditya/.config/waybar/icons/battery.svg"); }
+
+/* Short vertical dividers, centered between modules */
+#bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    box-shadow: none;
+    border-left: 1px solid rgba(190, 210, 245, 0.28);
+    border-image: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Draw a shorter divider centered vertically */
+#bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    background-repeat: no-repeat;
+    background-position: 6px center;
+}
+
+.modules-right {
+    border: none;
+}
+
+/* Short centered separators between right-side modules */
+#bluetooth, #pulseaudio, #backlight,
+#cpu, #memory, #battery {
+    border-left: none;
+    background-image:
+        linear-gradient(
+            rgba(190, 210, 245, 0.3),
+            rgba(190, 210, 245, 0.3)
+        );
+    background-size: 1px 12px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+/* Restore SVG icons while keeping short centered dividers */
+#network {
+    background-image: url("/home/aditya/.config/waybar/icons/wifi.svg");
+}
+#bluetooth {
+    background-image:
+        linear-gradient(rgba(190,210,245,0.3), rgba(190,210,245,0.3)),
+        url("/home/aditya/.config/waybar/icons/bluetooth.svg");
+}
+#pulseaudio {
+    background-image:
+        linear-gradient(rgba(190,210,245,0.3), rgba(190,210,245,0.3)),
+        url("/home/aditya/.config/waybar/icons/volume.svg");
+}
+#backlight {
+    background-image:
+        linear-gradient(rgba(190,210,245,0.3), rgba(190,210,245,0.3)),
+        url("/home/aditya/.config/waybar/icons/brightness.svg");
+}
+#cpu {
+    background-image:
+        linear-gradient(rgba(190,210,245,0.3), rgba(190,210,245,0.3)),
+        url("/home/aditya/.config/waybar/icons/cpu.svg");
+}
+#memory {
+    background-image:
+        linear-gradient(rgba(190,210,245,0.3), rgba(190,210,245,0.3)),
+        url("/home/aditya/.config/waybar/icons/memory.svg");
+}
+#battery {
+    background-image:
+        linear-gradient(rgba(190,210,245,0.3), rgba(190,210,245,0.3)),
+        url("/home/aditya/.config/waybar/icons/battery.svg");
+}
+
+/* First background is the 1px x 12px divider; second is the SVG */
+#bluetooth, #pulseaudio, #backlight, #cpu, #memory, #battery {
+    background-size: 1px 12px, 15px 15px;
+    background-position: left center, 8px center;
+    background-repeat: no-repeat, no-repeat;
+    padding-left: 28px;
+}
+#network {
+    background-size: 15px 15px;
+    background-position: 6px center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
