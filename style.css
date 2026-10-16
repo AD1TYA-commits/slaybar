@@ -1,0 +1,15 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans CJK JP", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+window#waybar {
+    background: transparent;
+    color: #dce6f5;
+}
+
